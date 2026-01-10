@@ -1,1 +1,8 @@
 @import "tailwindcss";
+
+option:hover,
+select:hover,
+button:hover,
+input:hover {
+  cursor: pointer;
+}
