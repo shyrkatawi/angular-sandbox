@@ -1,9 +1,10 @@
 import { Injectable } from "@angular/core";
+import { ILogger } from "./logger.type";
 
 let instancesCreated = 0;
 
-@Injectable()
-export class LoggerService {
+@Injectable({ providedIn: "root" })
+export class LoggerService implements ILogger {
   private readonly instanceId: number;
 
   constructor() {

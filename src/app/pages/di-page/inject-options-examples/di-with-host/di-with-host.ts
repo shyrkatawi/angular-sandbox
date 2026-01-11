@@ -1,5 +1,5 @@
 import { Component, inject } from "@angular/core";
-import { LoggerService } from "../logger.service";
+import { LoggerService } from "../../services/logger.service";
 
 @Component({
   selector: "app-di-with-host",
