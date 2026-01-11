@@ -1,0 +1,8 @@
+<div>
+  DI with Optional
+  @if (isLoggerAvailable) {
+    <button (click)="log()">LOG</button>
+  } @else {
+    <div>LoggerService is not available :( To fix it do <b>providedIn: "root"</b></div>
+  }
+</div>

@@ -18,4 +18,13 @@ export const routes: Routes = [
       },
     ],
   },
+  {
+    path: "di",
+    loadComponent: () => import("./pages/di-page/di-page").then((m) => m.DiPage),
+  },
+  {
+    path: "**",
+    loadComponent: () =>
+      import("./pages/not-found-page/not-found-page").then((m) => m.NotFoundPage),
+  },
 ];
