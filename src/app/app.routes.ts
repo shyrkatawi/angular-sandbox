@@ -16,12 +16,30 @@ export const routes: Routes = [
             (m) => m.TemplateFormPage,
           ),
       },
+      // {
+      //   path: "sync-with-query-params-form",
+      //   loadComponent: () =>
+      //     import("./pages/forms-page/sync-with-query-params-form-page/sync-with-query-params-form-page").then(
+      //       (m) => m.SyncWithQueryParamsFormPage,
+      //     ),
+      // },
     ],
   },
   {
     path: "di",
     loadComponent: () => import("./pages/di-page/di-page").then((m) => m.DiPage),
   },
+  {
+    path: "custom-directives",
+    loadComponent: () =>
+      import("./pages/custom-directives-page/custom-directives-page").then(
+        (m) => m.CustomDirectivesPage,
+      ),
+  },
+  // {
+  //   path: "pony-race",
+  //   loadComponent: () => import("./pages/pony-race/pony-race-page").then((m) => m.PonyRacePage),
+  // },
   {
     path: "**",
     loadComponent: () =>
